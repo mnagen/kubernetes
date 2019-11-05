@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: kubia-diska-container
+   labels:
+     env: prod
+     creation_method: manual
+spec:
+   containers:
+     - image: luksa/kubia
+       name: kubia-container
+       ports:
+        - containerPort: 8080
+          protocol: TCP
