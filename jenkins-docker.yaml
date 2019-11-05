@@ -1,0 +1,40 @@
+Installing docker
+
+
+apt install docker.io
+
+docker --version
+
+Installing jenkins using docker
+
+Do not use 
+
+docker run -p 8080:8080 -p 50000:50000 jenkins as this is deprecated and you'll be unable to download most of the jenkins plugins
+
+docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+
+
+docker stop containerod
+
+docker start containerid
+
+
+
+apt install mvn
+
+mvn --version
+
+
+installing java
+
+apt install openjdk-8-jdk
+
+java --version
+
+
+ps aux | grep java . this will help me to find the PID , Process ID
+kill -9 PID
+
+
+
+
